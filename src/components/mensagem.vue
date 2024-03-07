@@ -14,8 +14,6 @@
         <figure class="h-50 mt-20">
             <img class="object-cover" src="../assets/imagens/btn_home.png" alt="botn_home">
         </figure>
-        
-         
     </section>
 </template>
 
