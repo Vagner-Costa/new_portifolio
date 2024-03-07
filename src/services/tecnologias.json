@@ -1,0 +1,14 @@
+[
+    {"nome" : "HTML5"},
+    {"nome" : "CSS3"},
+    {"nome" : "Javascript"},
+    {"nome" : "React"},
+    {"nome" : "Nodejs"},
+    {"nome" : "Docker"},
+    {"nome" : "Mongodb"},
+    {"nome" : "Git"},
+    {"nome" : "Github"},
+    {"nome" : "Vuejs"},
+    {"nome" : "Tailwind"},
+    {"nome" : "Axios"}
+]
