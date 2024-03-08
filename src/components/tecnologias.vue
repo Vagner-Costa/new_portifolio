@@ -58,34 +58,113 @@
 
             <!-- Imagens das tecnologias -->
             <div class="w-full flex flex-row flex-wrap justify-center sm:px-20 md:px-20 lg:px-80 xl:px-[110px] 2xl:px-[120px] my-10">
-                <div v-for="tec in cptdTecnologias" :key="tec.nome">
-                    <div class="w-[145px] h-[120px] flex flex-col items-center justify-start 
-                        p-5 m-5 overflow bg-cinza_escuro sm:w-[160px] sm:h-[130px] sm:m-10"
-                    >
-                        <div >
-                            <p class="text-[16px] text-verde" translate="no">
-                                &#60; !-- {{tec.nome}} -- &#62;
-                            </p>
-                        </div>
-                        
-                        <figure class="w-full h-full flex justify-center items-center p-10 bg-cinza_escuro overflow-hidden">
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'HTML5'" src="../../src/assets/logos/html5.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'CSS3'" src="../../src/assets/logos/css3.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Javascript'" src="../../src/assets/logos/javascript.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'React'" src="../../src/assets/logos/react.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Nodejs'" src="../../src/assets/logos/node.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Docker'" src="../../src/assets/logos/docker.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Mongodb'" src="../../src/assets/logos/mongo.png" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Git'" src="../../src/assets/logos/git.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Github'" src="../../src/assets/logos/github.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Vuejs'" src="../../src/assets/logos/vue.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Tailwind'" src="../../src/assets/logos/tailwind.svg" alt="" />
-                            <img class="object-contain w-full h-full" v-if="tec.nome=== 'Axios'" src="../../src/assets/logos/axios.svg" alt="" />
-                        </figure>
-                        
-                    </div>
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- HTML5 -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/html5.svg" alt="logo" />
+                    </figure>
                 </div>
-                
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- CSS3 -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/css3.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Javascript -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/javascript.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- React -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/react.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Nodejs -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/node.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Docker -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/docker.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- MongoDB -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/mongo.png" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Git -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/git.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Github -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/github.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Vuejs -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/vue.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Tailwind -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/tailwind.svg" alt="logo" />
+                    </figure>
+                </div>
+
+                <div class="box_tecnologias">
+                    <p class="text-[16px] text-verde" translate="no">
+                        &#60; !-- Axios -- &#62;
+                    </p>
+                    <figure class="w-100 h-100 flex justify-center items-center p-10 bg-cinza_escuro">
+                        <img class="object-contain w-full h-full" src="../../src/assets/logos/axios.svg" alt="logo" />
+                    </figure>
+                </div>                
             </div>
 
             <!-- Tag template fechamento -->
@@ -115,26 +194,6 @@
     import H3 from './tags/h3.vue'
     import Template from './tags/template.vue'
     import Img from './tags/img.vue'
-
-    import {ref, onBeforeMount, computed} from 'vue'
-
-    const tecnologias = ref()
-
-    onBeforeMount(async()=>{
-        fetch('./src/services/tecnologias.json')
-        .then((response)=>{
-            return response.json()            
-        })
-        .then((dados)=>{
-            tecnologias.value = dados
-        })
-        .catch((error)=>{console.log(error)})
-    })
-
-    const cptdTecnologias = computed(()=>{
-        return tecnologias.value
-    })
-
 </script>
 
 <style scoped>

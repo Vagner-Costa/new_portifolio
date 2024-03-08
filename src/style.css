@@ -10,7 +10,7 @@
     *{
         @apply m-0 p-0 box-border
     }
-    body, html{
+    html{
         @apply overflow-hidden
     }
 }
@@ -33,6 +33,10 @@
     }
     .box_numero{
         @apply hidden sm:w-30 sm:flex sm:justify-end md:texto sm:text-cinza_claro sm:ml-10
+    }
+    .box_tecnologias{
+        @apply w-[145px] h-[145px] flex flex-col items-center justify-start 
+        p-5 m-5 overflow-hidden bg-cinza_escuro sm:w-[160px] sm:h-[130px] sm:m-10
     }
     .subtitulo{
         @apply font-subtitulo text-branco text-40 lg:text-50
