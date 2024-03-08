@@ -58,7 +58,7 @@
 
             <!-- Imagens das tecnologias -->
             <div class="w-full flex flex-row flex-wrap justify-center sm:px-20 md:px-20 lg:px-80 xl:px-[110px] 2xl:px-[120px] my-10">
-                <template v-for="tec in cptdTecnologias" :key="tec.nome">
+                <div v-for="tec in cptdTecnologias" :key="tec.nome">
                     <div class="w-[145px] h-[120px] flex flex-col items-center justify-start 
                         p-5 m-5 overflow bg-cinza_escuro sm:w-[160px] sm:h-[130px] sm:m-10"
                     >
@@ -67,7 +67,6 @@
                                 &#60; !-- {{tec.nome}} -- &#62;
                             </p>
                         </div>
-                        
                         
                         <figure class="w-full h-full flex justify-center items-center p-10 bg-cinza_escuro overflow-hidden">
                             <img class="object-contain w-full h-full" v-if="tec.nome=== 'HTML5'" src="../../src/assets/logos/html5.svg" alt="" />
@@ -83,10 +82,9 @@
                             <img class="object-contain w-full h-full" v-if="tec.nome=== 'Tailwind'" src="../../src/assets/logos/tailwind.svg" alt="" />
                             <img class="object-contain w-full h-full" v-if="tec.nome=== 'Axios'" src="../../src/assets/logos/axios.svg" alt="" />
                         </figure>
-
                         
                     </div>
-                </template>
+                </div>
                 
             </div>
 
